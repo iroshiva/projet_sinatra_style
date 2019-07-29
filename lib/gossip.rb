@@ -4,7 +4,7 @@
 
 class Gossip
 
-	attr_reader :author, :content
+	attr_accessor :author, :content
 
 	def initialize(author, content)
 		@author = author
