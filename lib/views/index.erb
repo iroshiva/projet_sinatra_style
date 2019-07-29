@@ -5,12 +5,16 @@
   <body>
   	<h1> Voici la liste de tous les potins!!!!</h1>
   	<br>
-    <% gossips.each do |gossip| %>
-      <p>
+      <% gossips.each_with_index do |gossip, id| %>
+      <p>  
         <%= gossip.author %> 
         :
         "<%= gossip.content %>"
+        <a href="/gossips/<%=id%>"> Lien vers ce potin
+        </a>
       </p>
-   <% end %>
+     <% end %>
+    <P> 
+      <a href="http://localhost:4567/gossips/new/">Crée ton propre potin !!!</a></P>
   </body>
 </html>

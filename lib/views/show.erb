@@ -3,13 +3,13 @@
     <title>The Gossip Project</title>
   </head>
   <body>
-  	<h1> PAGE POTIN</h1>
+  	<h1> PAGE POTIN </h1>
   	<br>
     <% Gossip.find(params[:id]) %>
       <p> Voici la page du potin n°<%= params[:id] %> </p>
       <p>Son auteur: <%= Gossip.find(params[:id]).author %></p>
       <p>Le contenu du potin: <%= Gossip.find(params[:id]).content %></p>
       <br>
-      <a href="http://localhost:4567/"> Lien vers la page de tous les potins</a>
+      <a href="http://localhost:4567"> Lien vers la page de tous les potins</a>
   </body>
 </html>
