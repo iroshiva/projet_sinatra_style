@@ -29,7 +29,7 @@ class Gossip
 	end
 
 	def self.find(id)
-		Gossip.all[id]
+		Gossip.all[id.to_s.to_i]
 	end
 
 end

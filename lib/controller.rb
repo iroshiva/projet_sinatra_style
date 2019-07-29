@@ -18,11 +18,9 @@ class ApplicationController < Sinatra::Base
    redirect '/'
 	end
 
-	get '/gossips/2/' do
-	  Gossip.all[2]
-	  "Voici le numéro du potin que tu veux: #{2}!"
+	get '/gossips/:id/' do
+		erb :show, {gossip: Gossip.find(params[:id])}
 	end
 
-  # run! if app_file == $0
 end
 
