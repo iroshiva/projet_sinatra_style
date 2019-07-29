@@ -6,12 +6,19 @@
   	<h1> PAGE POTIN </h1>
   	<br>
     <% gossip %>
+    <!-- injection de la variable gossip qui définit une méthode-->
+
       <p> Voici la page du potin n°<%= id %> </p>
+      <!-- affichage de l'id du potin-->
+
       <p>Son auteur: <%= gossip.author %></p>
+       <!-- affichage de l'author du potin-->
       <p>Le contenu du potin: <%= gossip.content %></p>
+       <!-- affichage du content du potin-->
       <br>
       <p> 
         <a href="/gossips/<%=id%>/edit"> Editer le potin </a>
+        <!-- utilisation de l'id pour redirigé le lien -->
       </p>
       <p> 
        <a href="http://localhost:4567"> Lien vers la page de tous les potins</a>

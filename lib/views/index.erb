@@ -6,17 +6,23 @@
   	<h1> Voici la liste de tous les potins!!!!</h1>
   	<br>
     <% gossips.each_with_index do |gossip, id| %>
+    <!-- variable gossips défini dans le controller -->
+    <!-- pour chaque gossip su tableau de tous les potins sort les nom et potin de l'utilisateur qui a créé le potin -->
+
     <p>  
       <%= gossip.author %> 
       :
       "<%= gossip.content %>"
       <a href="/gossips/<%=id%>"> Lien vers ce potin
+      <!-- l'id sert assigner l'index dans l'url de chaque potin -->
+
       </a>
     </p>
     <% end %>
     <P> 
       <a href="http://localhost:4567/gossips/new/">Crée ton propre potin !!!
       </a>
+      <!-- lien vers la page /gossips/new/ -->
     </P>
   </body>
 </html>
