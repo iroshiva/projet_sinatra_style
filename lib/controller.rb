@@ -18,10 +18,9 @@ class ApplicationController < Sinatra::Base
    redirect '/'
 	end
 
-	get '/hello/:id' do
-	  matches "GET /hello/foo" and "GET /hello/bar"
-	  params['id'] is 'foo' or 'bar'
-	  "Voici le numéro du potin que tu veux: #{params['id']}!"
+	get '/gossips/:id/' do
+	  Gossip.all['id']
+	  "Voici le numéro du potin que tu veux: #{'id'}!"
 	end
 
   # run! if app_file == $0
