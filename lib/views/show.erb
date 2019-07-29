@@ -5,11 +5,17 @@
   <body>
   	<h1> PAGE POTIN </h1>
   	<br>
-    <% Gossip.find(params[:id]) %>
-      <p> Voici la page du potin n°<%= params[:id] %> </p>
-      <p>Son auteur: <%= Gossip.find(params[:id]).author %></p>
-      <p>Le contenu du potin: <%= Gossip.find(params[:id]).content %></p>
+    <% gossip %>
+      <p> Voici la page du potin n°<%= id %> </p>
+      <p>Son auteur: <%= gossip.author %></p>
+      <p>Le contenu du potin: <%= gossip.content %></p>
       <br>
-      <a href="http://localhost:4567"> Lien vers la page de tous les potins</a>
+      <p> 
+        <a href="/gossips/<%=id%>/edit"> Editer le potin </a>
+      </p>
+      <p> 
+       <a href="http://localhost:4567"> Lien vers la page de tous les potins</a>
+      </p>
+
   </body>
 </html>

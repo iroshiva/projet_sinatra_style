@@ -32,6 +32,9 @@ class Gossip
 		Gossip.all[id.to_s.to_i]
 	end
 
+	def gossip_edit
+		
+	end
 end
 
 
