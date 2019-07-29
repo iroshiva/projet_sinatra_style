@@ -4,6 +4,6 @@
 
     Ne t'en fait pas, tu pourras faire partie de la danse en créant toi-même tes potins!!!
 
-    Tu pourras même modifier les potins!!! Malheureusement, cette cersion n'est pas encore disponible.... il faudra être patient!!!
+    Tu pourras même modifier les potins!!! Malheureusement, cette version n'est pas encore disponible.... il faudra être patient!!!
 
     Lance l'application avec $ shotgun -p4567!!!
