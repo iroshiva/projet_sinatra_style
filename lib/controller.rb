@@ -18,9 +18,9 @@ class ApplicationController < Sinatra::Base
    redirect '/'
 	end
 
-	get '/gossips/:id/' do
-	  Gossip.all['id']
-	  "Voici le numéro du potin que tu veux: #{'id'}!"
+	get '/gossips/2/' do
+	  Gossip.all[2]
+	  "Voici le numéro du potin que tu veux: #{2}!"
 	end
 
   # run! if app_file == $0
